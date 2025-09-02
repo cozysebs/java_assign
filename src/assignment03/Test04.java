@@ -11,28 +11,23 @@ import java.util.Vector;
 //4. 벡터 내에 정답이 아닌 단어를 랜덤하게 3개 선택하고 정답과 함께 4개의 보기를 출력한다.
 
 class Word {
-	String kor;
 	String eng;
+	String kor;
 	
 	public Word() {}
 	public Word(String kor, String eng) {
-		this.kor = kor;
 		this.eng = eng;
+		this.kor = kor;
 	}
 
 	public String getKor() {
 		return kor;
 	}
-	public void setKor(String kor) {
-		this.kor = kor;
-	}
 	public String getEng() {
 		return eng;
-	}
-	public void setEng(String eng) {
-		this.eng = eng;
-	}
+	}	
 }
+
 
 public class Test04 {
 	static Scanner sc;
@@ -57,7 +52,11 @@ public class Test04 {
 		// Vector<Word>에 저장되어 있는 kor 값을 eng와 매치되는 값 1개 매치되지 않는 값 3개를 꺼낸다.
 		// eng 값과 kor 값이 매치되면 Excellent! 매치되지 않으면 No!를 출력한다.
 		
-		// 0~vw.size() 사이의 값을 랜덤하게(랜덤 함수) i로 출력. vw.getEng(i). vw.getKor(i).
+		// 0~vw.size() 사이의 값을 랜덤하게(랜덤 함수) i로 출력.
+//		for(int i=0; i<vw.size(); i++) {
+//		System.out.println(vw.get((int)(Math.random()*vw.size())));
+//		}
+		
 	}
 	
 	static void input() {
